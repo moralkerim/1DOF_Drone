@@ -1,8 +1,9 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:first_project Debug (1),org.eclipse.launchbar.core.descriptorType.default\:New_configuration (1),org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IMU_Kalman_Filter,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:i2c_read Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:first_project Debug (1),org.eclipse.launchbar.core.descriptorType.default\:New_configuration (1),org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:i2c_read Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IMU_Kalman_Filter
 eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IMU_Kalman_Filter/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IMU_Kalman_Filter/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:first_project\ Debug\ (1)/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:first_project\ Debug\ (1)/activeLaunchTarget=null\:---

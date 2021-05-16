@@ -19,11 +19,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include <math.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include<math.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,12 +53,14 @@
 
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
-float gyroX, gyroY, gyroZ, accX, accY, accZ;
-float pitch_acc;
-float gyroa_x, gyroa_y, gyroa_z;
-const float st = 0.05;
+
+TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
+float gyroX, gyroY, gyroZ, gyro_e_x, accX, accY, accZ;
+float pitch_acc;
+float gyroa_x, gyroa_y, gyroa_z;
+const float st = 0.005;
 
 /* USER CODE END PV */
 
@@ -67,11 +68,11 @@ const float st = 0.05;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_TIM2_Init(void);
+/* USER CODE BEGIN PFP */
 void MPU6050_Baslat(void);
 int16_t GyroOku (uint8_t addr);
 float GyroErr(uint8_t addr);
-/* USER CODE BEGIN PFP */
-
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -108,11 +109,13 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+
   MPU6050_Baslat();
   //Gyro kalibrasyon hatalarını hesapla.
-  float gyro_e_x = GyroErr(GYRO_X_ADDR);
-
+  gyro_e_x = GyroErr(GYRO_X_ADDR);
+  HAL_TIM_Base_Start_IT(&htim2);
 
   /* USER CODE END 2 */
 
@@ -121,6 +124,7 @@ int main(void)
   while (1)
   {
 
+	  /*
 	  gyroX = (GyroOku(GYRO_X_ADDR)-gyro_e_x)/65.5;
 	  gyroa_x += gyroX * st;
 
@@ -131,40 +135,12 @@ int main(void)
 
 	  float acctop=sqrt(accX*accX+accY*accY+accZ*accZ);		//Toplam ivme
 	  pitch_acc=asin(accY/acctop)*57.324;			//İvme ölçerden hesaplanan pitch açısı
-	  HAL_Delay(50);
+    */
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-}
-
-void MPU6050_Baslat(void) {
-	uint8_t config = 0x00;
-	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, MPU6050_POW_REG, 1, &config, 1, 50); //Güç registerını aktif et
-	config = 0x08;
-	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, GYRO_CONF_REG, 1, &config, 1, 50); //Gyro 500 d/s'ye ayarlandi.
-	config = 0x10;
-	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, ACC_CONF_REG, 1, &config, 1, 50); //Acc +-8g'ye ayarlandi.
-}
-
-int16_t GyroOku (uint8_t addr) {
-	uint8_t gyro_data[2];
-	HAL_I2C_Mem_Read(&hi2c1, (uint16_t)MPU6050 | I2C_READ, addr, 1, gyro_data, 2, 50);
-	int16_t gyro = gyro_data[0]<<8 | gyro_data[1];
-	return gyro;
-}
-
-float GyroErr(uint8_t addr) {
-	float GyroXe=0;
-	//2000 ornek al ve kayma degerini kaydet.
-	for (int i=0; i<2000; i++)
-	{
-		GyroXe += (float)GyroOku(addr);
-
-		} //Haberleşmeyi durdur.
-	GyroXe=GyroXe/2000; //Son okunan değeri 2000'e böl.
-	return GyroXe;
 }
 
 /**
@@ -240,6 +216,51 @@ static void MX_I2C1_Init(void)
 }
 
 /**
+  * @brief TIM2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM2_Init(void)
+{
+
+  /* USER CODE BEGIN TIM2_Init 0 */
+
+  /* USER CODE END TIM2_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM2_Init 1 */
+
+  /* USER CODE END TIM2_Init 1 */
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = 32-1;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 5000;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM2_Init 2 */
+
+  /* USER CODE END TIM2_Init 2 */
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -255,6 +276,49 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void MPU6050_Baslat(void) {
+	uint8_t config = 0x00;
+	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, MPU6050_POW_REG, 1, &config, 1, 50); //Güç registerını aktif et
+	config = 0x08;
+	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, GYRO_CONF_REG, 1, &config, 1, 50); //Gyro 500 d/s'ye ayarlandi.
+	config = 0x10;
+	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, ACC_CONF_REG, 1, &config, 1, 50); //Acc +-8g'ye ayarlandi.
+}
+
+int16_t GyroOku (uint8_t addr) {
+	uint8_t gyro_data[2];
+	HAL_I2C_Mem_Read(&hi2c1, (uint16_t)MPU6050 | I2C_READ, addr, 1, gyro_data, 2, 50);
+	int16_t gyro = gyro_data[0]<<8 | gyro_data[1];
+	return gyro;
+}
+
+float GyroErr(uint8_t addr) {
+	float GyroXe=0;
+	//2000 ornek al ve kayma degerini kaydet.
+	for (int i=0; i<2000; i++)
+	{
+		GyroXe += (float)GyroOku(addr);
+
+		} //Haberleşmeyi durdur.
+	GyroXe=GyroXe/2000; //Son okunan değeri 2000'e böl.
+	return GyroXe;
+}
+
+void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
+
+	if(htim == &htim2) {
+		  gyroX = (GyroOku(GYRO_X_ADDR)-gyro_e_x)/65.5;
+		  gyroa_x += gyroX * st;
+
+		  //İvmeölçer degerlerini oku
+		  accX = GyroOku(ACC_X_ADDR);
+		  accY = GyroOku(ACC_Y_ADDR);
+		  accZ = GyroOku(ACC_Z_ADDR);
+
+		  float acctop=sqrt(accX*accX+accY*accY+accZ*accZ);		//Toplam ivme
+		  pitch_acc=asin(accY/acctop)*57.324;			//İvme ölçerden hesaplanan pitch açısı
+	}
+}
 
 /* USER CODE END 4 */
 
