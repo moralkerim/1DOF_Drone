@@ -318,8 +318,8 @@ void Kalman_Filtresi(void) {
 	S21_m = -st*sb; 	   S22_m=2*sb;
 
 	//Düzeltme
-	Kt11 = S11_m / (S11_m+0.3);
-	Kt21 = S21_m / (S21_m+0.3);
+	Kt11 = S11_m / (S11+0.3);
+	Kt21 = S21_m / (S11+0.3);
 
 	alpha = alpha - Kt11*(alpha-pitch_acc);
 	bias = bias - Kt21*(alpha-pitch_acc);
