@@ -57,7 +57,7 @@ I2C_HandleTypeDef hi2c1;
 TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
-float gyroX, gyroY, gyroZ, gyro_e_x, accX, accY, accZ;
+float gyroX, gyroY, gyroZ, gyro_e_x, gyroX_a,gyroX_a_x, accX, accY, accZ;
 float pitch_acc;
 float gyroa_x, gyroa_y, gyroa_z;
 float alpha, bias;
@@ -65,8 +65,9 @@ float S11_m, S12_m, S21_m, S22_m;
 float S11_p, S12_p, S21_p, S22_p;
 float Kt11, Kt21;
 float sa = 0.001; float sb = 0.001;
-float Q = 0.3;
-const float st = 0.005;
+float Q = 0.5;
+const float st = 0.001;
+int timer;
 
 /* USER CODE END PV */
 
@@ -130,19 +131,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
 	  /*
-	  gyroX = (GyroOku(GYRO_X_ADDR)-gyro_e_x)/65.5;
-	  gyroa_x += gyroX * st;
-
-	  //İvmeölçer degerlerini oku
-	  accX = GyroOku(ACC_X_ADDR);
-	  accY = GyroOku(ACC_Y_ADDR);
-	  accZ = GyroOku(ACC_Z_ADDR);
-
-	  float acctop=sqrt(accX*accX+accY*accY+accZ*accZ);		//Toplam ivme
-	  pitch_acc=asin(accY/acctop)*57.324;			//İvme ölçerden hesaplanan pitch açısı
-    */
+	  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+	  HAL_Delay(500);
+	  */
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -204,7 +198,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 32768;
+  hi2c1.Init.ClockSpeed = 400000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
@@ -243,7 +237,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 32-1;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 5000;
+  htim2.Init.Period = 1000;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -274,27 +268,49 @@ static void MX_TIM2_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : LED_Pin */
+  GPIO_InitStruct.Pin = LED_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PB1 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
 /* USER CODE BEGIN 4 */
 void MPU6050_Baslat(void) {
 	uint8_t config = 0x00;
-	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, MPU6050_POW_REG, 1, &config, 1, 50); //Güç registerını aktif et
+	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, MPU6050_POW_REG, 1, &config, 1, 5); //Güç registerını aktif et
 	config = 0x08;
-	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, GYRO_CONF_REG, 1, &config, 1, 50); //Gyro 500 d/s'ye ayarlandi.
+	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, GYRO_CONF_REG, 1, &config, 1, 5); //Gyro 500 d/s'ye ayarlandi.
 	config = 0x10;
-	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, ACC_CONF_REG, 1, &config, 1, 50); //Acc +-8g'ye ayarlandi.
+	HAL_I2C_Mem_Write(&hi2c1, (uint16_t)MPU6050, ACC_CONF_REG, 1, &config, 1, 5); //Acc +-8g'ye ayarlandi.
 }
 
 int16_t GyroOku (uint8_t addr) {
 	uint8_t gyro_data[2];
-	HAL_I2C_Mem_Read(&hi2c1, (uint16_t)MPU6050 | I2C_READ, addr, 1, gyro_data, 2, 50);
+	HAL_I2C_Mem_Read(&hi2c1, (uint16_t)MPU6050 | I2C_READ, addr, 1, gyro_data, 2, 1);
 	int16_t gyro = gyro_data[0]<<8 | gyro_data[1];
 	return gyro;
 }
@@ -312,14 +328,15 @@ float GyroErr(uint8_t addr) {
 }
 
 void Kalman_Filtresi(void) {
-	//Tahmin
+
+	//**Tahmin**
 	alpha = alpha - bias*st + gyroX*st;
 	S11_m = 2*sa+st*st*sb; S12_m=-st*sb;
 	S21_m = -st*sb; 	   S22_m=2*sb;
 
-	//Düzeltme
-	Kt11 = S11_m / (S11_m+0.3);
-	Kt21 = S21_m / (S21_m+0.3);
+	//**Düzeltme**
+	Kt11 = S11_m / (S11_m+Q);
+	Kt21 = S21_m / (S21_m+Q);
 
 	alpha = alpha - Kt11*(alpha-pitch_acc);
 	bias = bias - Kt21*(alpha-pitch_acc);
@@ -333,8 +350,11 @@ void Kalman_Filtresi(void) {
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 
 	if(htim == &htim2) {
+
+
 		  gyroX = (GyroOku(GYRO_X_ADDR))/65.5;
-		 // gyroa_x += gyroX * st;
+		  //gyroX_a_x = (GyroOku(GYRO_X_ADDR)-gyro_e_x)/65.5;
+		  //gyroX_a += gyroX_a_x * st;
 
 		  //İvmeölçer degerlerini oku
 		  accX = GyroOku(ACC_X_ADDR);
@@ -342,9 +362,12 @@ void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 		  accZ = GyroOku(ACC_Z_ADDR);
 
 		  float acctop=sqrt(accX*accX+accY*accY+accZ*accZ);		//Toplam ivme
-		  pitch_acc=asin(accY/acctop)*57.324;			//İvme ölçerden hesaplanan pitch açısı
+		  pitch_acc=asin(accY/acctop)*57.324;					//İvme ölçerden hesaplanan pitch açısı
 
 		  Kalman_Filtresi();
+		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
+
+
 	}
 }
 

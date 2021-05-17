@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="I2C"/>
+		<item key="selection" value="HAL_TIM_PeriodElapsedCallback"/>
 		<list key="findhistory">
+			<item value="HAL_TIM_PeriodElapsedCallback"/>
+			<item value="GyroOku"/>
 			<item value="I2c"/>
 			<item value="HAL_GP"/>
 			<item value="HAL_G"/>
