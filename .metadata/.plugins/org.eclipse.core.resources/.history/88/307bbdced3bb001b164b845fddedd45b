@@ -83,7 +83,6 @@ void MPU6050_Baslat(void);
 int16_t GyroOku (uint8_t addr);
 float GyroErr(uint8_t addr);
 void Kalman_Filtresi(void);
-void PWMYaz(uint16_t pwm1, uint16_t pwm2);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -422,11 +421,6 @@ void Kalman_Filtresi(void) {
 	S11_m = S11_p; S12_m = S12_p; S21_m = S21_p; S22_m = S22_p;
 }
 
-void PWMYaz(uint16_t pwm1, uint16_t pwm2) {
-	  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,pwm1);
-	  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,pwm2);
-}
-
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 
 	if(htim == &htim2) {
@@ -446,7 +440,10 @@ void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 
 		  Kalman_Filtresi();
 		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
-		  PWMYaz(1000, 2000);
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,1000);
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,2000);
+
+
 	}
 }
 

@@ -3718,3 +3718,927 @@
 2021-05-17 00:46:17,065 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
 2021-05-17 00:46:17,081 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
 2021-05-17 00:46:17,081 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 12:48:18,187 [INFO] Activator:170 - 
+
+
+2021-05-17 12:48:18,187 [INFO] Activator:171 - !SESSION log4j initialized
+2021-05-17 12:48:30,845 [INFO] McuFinderGlobals:39 - Set McuFinder mode to 2 (CubeIDE integrated)
+2021-05-17 12:48:31,158 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236
+2021-05-17 12:48:31,173 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/mcu/
+2021-05-17 12:48:31,173 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/boardmanager/
+2021-05-17 12:48:31,173 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,173 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,173 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,189 [INFO] DbMcusAds:85 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,189 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,189 [INFO] DbMcusJson:65 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,189 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,189 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,205 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-05-17 12:48:31,205 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,361 [INFO] RulesReader:52 - Compatibility file has been processed (237 Rules)
+2021-05-17 12:48:31,533 [INFO] MicroXplorer:622 - Detected Java Version = 11.0.9.1
+2021-05-17 12:48:31,533 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/mcu/
+2021-05-17 12:48:31,533 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/boardmanager/
+2021-05-17 12:48:31,533 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,533 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,533 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,533 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,533 [INFO] DbMcusAds:85 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,533 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,533 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,533 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,533 [INFO] DbMcusJson:65 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,533 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,533 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,533 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,533 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,533 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,533 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,533 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-05-17 12:48:31,533 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,533 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,611 [INFO] MainPanel:204 - HeapMemory: 268435456
+2021-05-17 12:48:31,720 [INFO] DbMcusXml:74 - Set database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/mcu/
+2021-05-17 12:48:31,720 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/boardmanager/
+2021-05-17 12:48:31,720 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,720 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,720 [INFO] DbExamples:333 - Set plugin images path to: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/plugins/mcufinder/images/
+2021-05-17 12:48:31,720 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,720 [INFO] DbMcusAds:85 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,720 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,720 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,720 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,720 [INFO] DbMcusJson:65 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,720 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,720 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,720 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,720 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,720 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,720 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,720 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-05-17 12:48:31,720 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\Kerim\.stmcufinder\plugins\mcufinder/ => C:\Users\Kerim\.stmcufinder\plugins\mcufinder
+2021-05-17 12:48:31,720 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\Kerim\.stmcufinder\plugins\mcufinder//mcu/
+2021-05-17 12:48:31,736 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236
+2021-05-17 12:48:31,736 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2021-05-17 12:48:31,736 [INFO] PluginManage:292 - Check plugin analytics
+2021-05-17 12:48:36,517 [INFO] AnalyticsPlugin:233 - Accepted Software Licenses: 
+2021-05-17 12:48:36,517 [INFO] AnalyticsPlugin:235 - Accepted CMSIS Pack Licenses: 
+2021-05-17 12:48:36,517 [INFO] AnalyticsPlugin:237 - Accepted Firmware Licenses: 
+2021-05-17 12:48:36,517 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2021-05-17 12:48:36,517 [INFO] PluginManage:292 - Check plugin clock
+2021-05-17 12:48:36,533 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2021-05-17 12:48:36,533 [INFO] PluginManage:292 - Check plugin ddr
+2021-05-17 12:48:36,548 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2021-05-17 12:48:36,548 [INFO] PluginManage:292 - Check plugin filemanager
+2021-05-17 12:48:36,689 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2021-05-17 12:48:36,689 [INFO] PluginManage:292 - Check plugin ipmanager
+2021-05-17 12:48:36,705 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2021-05-17 12:48:36,705 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2021-05-17 12:48:36,720 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2021-05-17 12:48:36,720 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2021-05-17 12:48:36,767 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2021-05-17 12:48:36,767 [INFO] PluginManage:292 - Check plugin power
+2021-05-17 12:48:36,783 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2021-05-17 12:48:36,783 [INFO] PluginManage:292 - Check plugin projectmanager
+2021-05-17 12:48:36,814 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2021-05-17 12:48:36,814 [INFO] PluginManage:292 - Check plugin thirdparty
+2021-05-17 12:48:37,080 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2021-05-17 12:48:37,080 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-05-17 12:48:37,080 [INFO] PluginManage:292 - Check plugin tools
+2021-05-17 12:48:37,080 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-05-17 12:48:37,080 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [1/15]
+2021-05-17 12:48:37,142 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2021-05-17 12:48:37,142 [INFO] PluginManage:292 - Check plugin tutovideos
+2021-05-17 12:48:37,408 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2021-05-17 12:48:37,408 [INFO] PluginManage:292 - Check plugin updater
+2021-05-17 12:48:37,423 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2021-05-17 12:48:37,423 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2021-05-17 12:48:37,658 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-05-17 12:48:37,814 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:37,814 [INFO] PluginManager:203 - loadIPPluginJar : add adc
+2021-05-17 12:48:37,845 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:37,845 [INFO] PluginManager:203 - loadIPPluginJar : add aes
+2021-05-17 12:48:37,892 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:37,892 [INFO] PluginManager:203 - loadIPPluginJar : add can
+2021-05-17 12:48:37,923 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:37,939 [INFO] PluginManager:203 - loadIPPluginJar : add comp
+2021-05-17 12:48:37,970 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:37,970 [INFO] PluginManager:203 - loadIPPluginJar : add cryp
+2021-05-17 12:48:38,002 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,002 [INFO] PluginManager:203 - loadIPPluginJar : add dfsdm
+2021-05-17 12:48:38,017 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,033 [INFO] PluginManager:203 - loadIPPluginJar : add dma
+2021-05-17 12:48:38,048 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,048 [INFO] PluginManager:203 - loadIPPluginJar : add fatfs
+2021-05-17 12:48:38,111 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,111 [INFO] PluginManager:203 - loadIPPluginJar : add fmc
+2021-05-17 12:48:38,127 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,127 [INFO] PluginManager:203 - loadIPPluginJar : add freertos
+2021-05-17 12:48:38,158 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,158 [INFO] PluginManager:203 - loadIPPluginJar : add genericplugin
+2021-05-17 12:48:38,252 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,252 [INFO] PluginManager:203 - loadIPPluginJar : add gfxmmu
+2021-05-17 12:48:38,392 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,392 [INFO] PluginManager:203 - loadIPPluginJar : add gic
+2021-05-17 12:48:38,408 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,408 [INFO] PluginManager:203 - loadIPPluginJar : add gpio
+2021-05-17 12:48:38,486 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,486 [INFO] PluginManager:203 - loadIPPluginJar : add gtzc
+2021-05-17 12:48:38,517 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,517 [INFO] PluginManager:203 - loadIPPluginJar : add hash
+2021-05-17 12:48:38,580 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,580 [INFO] PluginManager:203 - loadIPPluginJar : add i2c
+2021-05-17 12:48:38,627 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,627 [INFO] PluginManager:203 - loadIPPluginJar : add i2s
+2021-05-17 12:48:38,642 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,642 [INFO] PluginManager:203 - loadIPPluginJar : add ipddr
+2021-05-17 12:48:38,689 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,689 [INFO] PluginManager:203 - loadIPPluginJar : add lorawan
+2021-05-17 12:48:38,736 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,736 [INFO] PluginManager:203 - loadIPPluginJar : add ltdc
+2021-05-17 12:48:38,752 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,752 [INFO] PluginManager:203 - loadIPPluginJar : add mdma
+2021-05-17 12:48:38,767 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,767 [INFO] PluginManager:203 - loadIPPluginJar : add nvic
+2021-05-17 12:48:38,814 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,814 [INFO] PluginManager:203 - loadIPPluginJar : add opamp
+2021-05-17 12:48:38,877 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,877 [INFO] PluginManager:203 - loadIPPluginJar : add openamp
+2021-05-17 12:48:38,923 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,923 [INFO] PluginManager:203 - loadIPPluginJar : add pdm2pcm
+2021-05-17 12:48:38,955 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,955 [INFO] PluginManager:203 - loadIPPluginJar : add plateformsettings
+2021-05-17 12:48:38,986 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:38,986 [INFO] PluginManager:203 - loadIPPluginJar : add quadspi
+2021-05-17 12:48:39,002 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,002 [INFO] PluginManager:203 - loadIPPluginJar : add resmgrutility
+2021-05-17 12:48:39,048 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,048 [INFO] PluginManager:203 - loadIPPluginJar : add sai
+2021-05-17 12:48:39,095 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,095 [INFO] PluginManager:203 - loadIPPluginJar : add spi
+2021-05-17 12:48:39,158 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,158 [INFO] PluginManager:203 - loadIPPluginJar : add stm32_wpan
+2021-05-17 12:48:39,189 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,189 [INFO] PluginManager:203 - loadIPPluginJar : add tim
+2021-05-17 12:48:39,267 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,267 [INFO] PluginManager:203 - loadIPPluginJar : add touchsensing
+2021-05-17 12:48:39,298 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,298 [INFO] PluginManager:203 - loadIPPluginJar : add tracer_emb
+2021-05-17 12:48:39,330 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,330 [INFO] PluginManager:203 - loadIPPluginJar : add ts
+2021-05-17 12:48:39,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,361 [INFO] PluginManager:203 - loadIPPluginJar : add tsc
+2021-05-17 12:48:39,392 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,392 [INFO] PluginManager:203 - loadIPPluginJar : add ucpd
+2021-05-17 12:48:39,439 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:39,439 [INFO] PluginManager:203 - loadIPPluginJar : add usart
+2021-05-17 12:48:39,782 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:39,907 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:39,922 [INFO] DbMcusAds:132 - JSON generation date=Tue May 11 18:32:49 TRT 2021 (1620747169707)
+2021-05-17 12:48:39,922 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:39,953 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-05-17 12:48:40,094 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [2/15]
+2021-05-17 12:48:40,172 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:40,172 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:40,172 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:40,172 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-05-17 12:48:40,172 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:40,235 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:40,235 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-05-17 12:48:43,110 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:43,110 [ERROR] AbstractThirdPartyUpdaterManager:153 - class java.lang.Integer cannot be cast to class java.util.List (java.lang.Integer and java.util.List are in module java.base of loader 'bootstrap')
+2021-05-17 12:48:43,110 [INFO] ThirdParty:900 - Integrity check success = false
+2021-05-17 12:48:43,110 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-05-17 12:48:43,110 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-05-17 12:48:43,110 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-05-17 12:48:43,110 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-05-17 12:48:43,110 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-05-17 12:48:43,110 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-05-17 12:48:43,125 [ERROR] Updater:1065 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2021-05-17 12:48:43,141 [INFO] Updater:1002 - Updater Version found : 6.2.1
+2021-05-17 12:48:43,157 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236
+2021-05-17 12:48:43,532 [INFO] MainUpdater:2661 - connection check result : 10
+2021-05-17 12:48:43,532 [INFO] MainUpdater:255 - Updater Check For Update Now.
+2021-05-17 12:48:43,532 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.21
+2021-05-17 12:48:43,594 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2021-05-17 12:48:43,672 [INFO] MainUpdater:2661 - connection check result : 10
+2021-05-17 12:48:43,672 [INFO] MainUpdater:2661 - connection check result : 10
+2021-05-17 12:48:43,907 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-05-17 12:48:43,907 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.21
+2021-05-17 12:48:43,907 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-05-17 12:48:43,907 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-05-17 12:48:43,907 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-05-17 12:48:43,907 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-05-17 12:48:43,907 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 170379696 Bytes (268435456)
+2021-05-17 12:48:43,907 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-05-17 12:48:43,907 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.21
+2021-05-17 12:48:43,907 [INFO] OpenFileManager:303 - Change cursor
+2021-05-17 12:48:43,922 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-05-17 12:48:43,922 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-05-17 12:48:44,016 [WARN] PackLoader:226 - Cannot read IP mode file for RoweBots.I-CUBE-UNISONRTOS.5.5.0-4
+2021-05-17 12:48:44,047 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0
+2021-05-17 12:48:44,063 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.3.0.0
+2021-05-17 12:48:44,078 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.2.0
+2021-05-17 12:48:44,110 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.2
+2021-05-17 12:48:44,125 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.2.0
+2021-05-17 12:48:44,141 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.4.0.0
+2021-05-17 12:48:44,172 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.1.0.0
+2021-05-17 12:48:44,250 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.1.0.0
+2021-05-17 12:48:44,360 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.8.3.0
+2021-05-17 12:48:44,578 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.1.0.0
+2021-05-17 12:48:44,610 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.6.0.0
+2021-05-17 12:48:44,625 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.2.0
+2021-05-17 12:48:44,641 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.5.2.0
+2021-05-17 12:48:44,657 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.1.0
+2021-05-17 12:48:44,672 [WARN] PackLoader:226 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.4.7.0
+2021-05-17 12:48:44,688 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.16.1
+2021-05-17 12:48:44,688 [INFO] ThirdParty:900 - Integrity check success = true
+2021-05-17 12:48:44,688 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-05-17 12:48:44,688 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-05-17 12:48:45,760 [INFO] Context:587 - Trying to add GPIOservice into a context  which must be forbidden
+2021-05-17 12:48:46,103 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-05-17 12:48:46,103 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-05-17 12:48:46,103 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 12:48:46,119 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-05-17 12:48:46,119 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-05-17 12:48:46,119 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-05-17 12:48:46,135 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-05-17 12:48:46,135 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-05-17 12:48:46,327 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-05-17 12:48:46,327 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-05-17 12:48:46,327 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-05-17 12:48:46,343 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-05-17 12:48:46,343 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-05-17 12:48:46,343 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-05-17 12:48:46,343 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-05-17 12:48:46,343 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-05-17 12:48:46,343 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-05-17 12:48:46,343 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-05-17 12:48:46,343 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-05-17 12:48:46,343 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2021-05-17 12:48:46,343 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.2.0: no header file found
+2021-05-17 12:48:46,343 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.2: no header file found
+2021-05-17 12:48:46,343 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.2.0: no header file found
+2021-05-17 12:48:46,734 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 12:48:46,734 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 12:48:46,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (ADCFreqValue) has invalid value (16000000)
+2021-05-17 12:48:46,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-05-17 12:48:46,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (32000000)
+2021-05-17 12:48:46,913 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 243129344 Bytes (300941312)
+2021-05-17 12:48:46,913 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\/mcu/families.xml
+2021-05-17 12:48:47,842 [INFO] DbMcusJson:94 - JSON generation date=Mon Feb 08 16:35:07 TRT 2021 (1612791307)
+2021-05-17 12:48:48,597 [INFO] DbMcus:175 - Found 1906 MCUs (1866 are supported by CubeMX, 1866 are visible in CubeMX)
+2021-05-17 12:48:48,597 [INFO] ApiDb:251 - Load user favorites file C:\Users\Kerim/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-05-17 12:48:48,597 [INFO] ApiDb:255 - User favorites MCUs=[]
+2021-05-17 12:48:48,597 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2021-05-17 12:48:48,613 [WARN] ThirdParty:762 - waiting for thirdparty lock release [change project]
+2021-05-17 12:48:48,613 [INFO] ThirdParty:764 - entering critical section [change project]
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 1.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.3.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 6.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2021-05-17 12:48:48,613 [INFO] ThirdParty:770 - exiting critical section [change project]
+2021-05-17 12:48:48,972 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-05-17 12:48:48,972 [INFO] PinOutPanel:1435 - setPackage(STM32F103C8Tx,LQFP48)
+2021-05-17 12:48:49,519 [INFO] UtilMem:74 - Before build in PCC Used Memory: 311550936 Bytes (510656512)
+2021-05-17 12:48:50,019 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/Kerim/.stm32cubemx/plugins/power
+2021-05-17 12:48:50,066 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/Kerim/.stm32cubemx/plugins/power
+2021-05-17 12:48:50,128 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/Kerim/.stm32cubemx/plugins/power
+2021-05-17 12:48:50,128 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/Kerim/.stm32cubemx/plugins/power
+2021-05-17 12:48:50,300 [INFO] UtilMem:74 - After build in PCC Used Memory: 304788120 Bytes (510656512)
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,332 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,347 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 12:48:50,363 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 12:48:50,363 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 12:48:50,394 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2021-05-17 12:48:50,503 [INFO] OpenFileManager:323 - Restore cursor
+2021-05-17 12:48:50,566 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 12:48:50,566 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 12:48:50,566 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 12:48:50,566 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 12:49:15,656 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 12:49:15,671 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 12:49:15,671 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 12:49:15,671 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 12:50:15,616 [INFO] Gpio:248 - dependency for GPIO [I2C1, RCC, SYS]
+2021-05-17 12:50:42,616 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 425005288 Bytes (515899392)
+2021-05-17 12:50:44,780 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 436068600 Bytes (515899392)
+2021-05-17 12:50:47,343 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 445434472 Bytes (515899392)
+2021-05-17 12:50:47,850 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-17 12:50:47,850 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8F1
+2021-05-17 12:50:47,850 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-17 12:50:47,850 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-17 12:50:47,866 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-17 12:50:47,866 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-05-17 12:50:47,866 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-05-17 12:50:47,866 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 12:50:47,866 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 12:50:48,307 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp_save
+2021-05-17 12:50:48,682 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp
+2021-05-17 12:50:48,822 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp_save
+2021-05-17 12:50:48,932 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp
+2021-05-17 12:50:48,947 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_Analogue is not available in your config.xml file
+2021-05-17 12:50:48,947 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_DigitalFolter is not available in your config.xml file
+2021-05-17 12:50:49,151 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 12:50:49,151 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 12:50:49,182 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c_save
+2021-05-17 12:50:49,322 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c
+2021-05-17 12:50:49,338 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h_save
+2021-05-17 12:50:49,416 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h
+2021-05-17 12:50:49,447 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c_save
+2021-05-17 12:50:49,640 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c
+2021-05-17 12:50:49,652 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp_save
+2021-05-17 12:50:49,715 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp
+2021-05-17 12:50:49,762 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-05-17 12:50:49,856 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h
+2021-05-17 12:50:49,887 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-05-17 12:50:49,902 [WARN] CodeGenerator:3191 - IP not found : null
+2021-05-17 12:50:49,918 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h_save
+2021-05-17 12:50:49,996 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h
+2021-05-17 12:50:50,027 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c_save
+2021-05-17 12:50:50,168 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c
+2021-05-17 12:50:51,603 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 553mS.
+2021-05-17 12:50:51,603 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-17 12:50:52,125 [INFO] ConfigFileManager:1242 - The Die is : DIE410
+2021-05-17 12:50:52,156 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-05-17 12:50:52,188 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-05-17 12:50:52,235 [INFO] ApiDbMcu:458 - Load IP Config File for USB_DEVICE
+2021-05-17 12:50:55,626 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 4023mS.
+2021-05-17 12:50:55,626 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 12:50:55,642 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 13:13:27,524 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 13:13:27,524 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 13:13:27,524 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 13:13:27,524 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 13:13:27,571 [INFO] Gpio:248 - dependency for GPIO [I2C1, RCC, SYS]
+2021-05-17 13:13:44,428 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 394321424 Bytes (763363328)
+2021-05-17 13:13:46,567 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 406904336 Bytes (763363328)
+2021-05-17 13:13:48,211 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 443604496 Bytes (763363328)
+2021-05-17 13:13:48,592 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-17 13:13:48,592 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8F1
+2021-05-17 13:13:48,592 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-17 13:13:48,593 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-17 13:13:48,593 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-17 13:13:48,593 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-05-17 13:13:48,594 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-05-17 13:13:48,596 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 13:13:48,596 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 13:13:48,938 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp_save
+2021-05-17 13:13:49,031 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp
+2021-05-17 13:13:49,084 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp_save
+2021-05-17 13:13:49,162 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp
+2021-05-17 13:13:49,185 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_Analogue is not available in your config.xml file
+2021-05-17 13:13:49,185 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_DigitalFolter is not available in your config.xml file
+2021-05-17 13:13:49,347 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 13:13:49,347 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 13:13:49,369 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c_save
+2021-05-17 13:13:49,485 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c
+2021-05-17 13:13:49,516 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h_save
+2021-05-17 13:13:49,601 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h
+2021-05-17 13:13:49,632 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c_save
+2021-05-17 13:13:49,764 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c
+2021-05-17 13:13:49,770 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp_save
+2021-05-17 13:13:49,933 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp
+2021-05-17 13:13:49,949 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-05-17 13:13:50,049 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h
+2021-05-17 13:13:50,071 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-05-17 13:13:50,071 [WARN] CodeGenerator:3191 - IP not found : null
+2021-05-17 13:13:50,103 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h_save
+2021-05-17 13:13:50,187 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h
+2021-05-17 13:13:50,203 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c_save
+2021-05-17 13:13:50,350 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c
+2021-05-17 13:13:51,609 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 492mS.
+2021-05-17 13:13:51,609 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-17 13:13:52,210 [INFO] ConfigFileManager:1242 - The Die is : DIE410
+2021-05-17 13:13:54,293 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2684mS.
+2021-05-17 13:13:54,293 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 13:13:54,293 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 14:00:15,048 [INFO] MainUpdater:2661 - connection check result : 10
+2021-05-17 14:00:15,050 [INFO] MainUpdater:2661 - connection check result : 10
+2021-05-17 14:00:15,158 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-05-17 14:00:15,158 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.21
+2021-05-17 14:00:15,159 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-05-17 14:00:15,159 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-05-17 14:00:15,159 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-05-17 14:00:15,163 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-05-17 14:00:15,171 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 554296864 Bytes (818937856)
+2021-05-17 14:00:15,172 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-05-17 14:00:15,172 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.21
+2021-05-17 14:00:15,173 [INFO] OpenFileManager:303 - Change cursor
+2021-05-17 14:00:15,269 [INFO] RulesReader:52 - Compatibility file has been processed (237 Rules)
+2021-05-17 14:00:16,545 [INFO] Context:587 - Trying to add GPIOservice into a context  which must be forbidden
+2021-05-17 14:00:16,928 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-05-17 14:00:16,928 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-05-17 14:00:16,928 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-05-17 14:00:16,929 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,930 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,930 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,930 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,930 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,930 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,930 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,930 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,930 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,931 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,931 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,931 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,931 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,931 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,931 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,931 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,932 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,932 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,932 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,932 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,932 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,932 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,932 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,932 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,933 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,933 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,933 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-05-17 14:00:16,943 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-05-17 14:00:16,943 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-05-17 14:00:16,944 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-05-17 14:00:16,951 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-05-17 14:00:16,952 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-05-17 14:00:17,133 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-05-17 14:00:17,134 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-05-17 14:00:17,134 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.3.0: no header file found
+2021-05-17 14:00:17,147 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-05-17 14:00:17,148 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-05-17 14:00:17,148 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-05-17 14:00:17,148 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-05-17 14:00:17,148 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-05-17 14:00:17,150 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-05-17 14:00:17,150 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-05-17 14:00:17,150 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-05-17 14:00:17,151 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2021-05-17 14:00:17,152 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.2.0: no header file found
+2021-05-17 14:00:17,152 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.2: no header file found
+2021-05-17 14:00:17,154 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.2.0: no header file found
+2021-05-17 14:00:17,528 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 14:00:17,528 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 14:00:17,528 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (ADCFreqValue) has invalid value (16000000)
+2021-05-17 14:00:17,529 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-05-17 14:00:17,529 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (32000000)
+2021-05-17 14:00:17,747 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 403498416 Bytes (818937856)
+2021-05-17 14:00:17,749 [WARN] ThirdParty:762 - waiting for thirdparty lock release [change project]
+2021-05-17 14:00:17,749 [INFO] ThirdParty:764 - entering critical section [change project]
+2021-05-17 14:00:17,749 [INFO] ThirdParty:952 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 1.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2021-05-17 14:00:17,750 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.3.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 6.0.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-05-17 14:00:17,751 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2021-05-17 14:00:17,752 [INFO] ThirdParty:952 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2021-05-17 14:00:17,752 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2021-05-17 14:00:17,752 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-05-17 14:00:17,752 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-05-17 14:00:17,752 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-05-17 14:00:17,752 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2021-05-17 14:00:17,752 [INFO] ThirdParty:770 - exiting critical section [change project]
+2021-05-17 14:00:18,039 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-05-17 14:00:18,041 [INFO] PinOutPanel:1435 - setPackage(STM32F103C8Tx,LQFP48)
+2021-05-17 14:00:18,396 [INFO] UtilMem:74 - Before build in PCC Used Memory: 462216624 Bytes (818937856)
+2021-05-17 14:00:18,702 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/Kerim/.stm32cubemx/plugins/power
+2021-05-17 14:00:18,753 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/Kerim/.stm32cubemx/plugins/power
+2021-05-17 14:00:18,806 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/Kerim/.stm32cubemx/plugins/power
+2021-05-17 14:00:18,808 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/Kerim/.stm32cubemx/plugins/power
+2021-05-17 14:00:18,866 [INFO] UtilMem:74 - After build in PCC Used Memory: 531422640 Bytes (818937856)
+2021-05-17 14:00:18,890 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,890 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,890 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,890 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,890 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,891 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,891 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,891 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,891 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,891 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,892 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,892 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,892 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,892 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,893 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,893 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,893 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,894 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,894 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,894 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,895 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,896 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,897 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,898 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,899 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,901 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,902 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-05-17 14:00:18,904 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 14:00:18,904 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 14:00:18,924 [INFO] OpenFileManager:323 - Restore cursor
+2021-05-17 14:00:18,971 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 14:00:18,972 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 14:00:18,973 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 14:00:18,973 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 14:45:46,516 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 14:45:46,517 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 14:45:46,530 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 14:45:46,531 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,668 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,668 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,668 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,668 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,692 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,692 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,692 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,692 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,707 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,707 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,707 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:22,707 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:25,589 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 422738432 Bytes (818937856)
+2021-05-17 16:11:27,274 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 432175616 Bytes (818937856)
+2021-05-17 16:11:29,128 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 508721664 Bytes (818937856)
+2021-05-17 16:11:29,535 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-17 16:11:29,535 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8F1
+2021-05-17 16:11:29,535 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-17 16:11:29,535 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-17 16:11:29,535 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-17 16:11:29,535 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-05-17 16:11:29,535 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-05-17 16:11:29,535 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:29,535 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:11:29,907 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp_save
+2021-05-17 16:11:30,019 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp
+2021-05-17 16:11:30,072 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp_save
+2021-05-17 16:11:30,141 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp
+2021-05-17 16:11:30,157 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_Analogue is not available in your config.xml file
+2021-05-17 16:11:30,157 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_DigitalFolter is not available in your config.xml file
+2021-05-17 16:11:30,289 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:11:30,289 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:11:30,304 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c_save
+2021-05-17 16:11:30,420 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c
+2021-05-17 16:11:30,427 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h_save
+2021-05-17 16:11:30,505 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h
+2021-05-17 16:11:30,527 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c_save
+2021-05-17 16:11:30,659 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c
+2021-05-17 16:11:30,659 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp_save
+2021-05-17 16:11:30,728 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp
+2021-05-17 16:11:30,743 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-05-17 16:11:30,959 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h
+2021-05-17 16:11:30,991 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-05-17 16:11:30,991 [WARN] CodeGenerator:3191 - IP not found : null
+2021-05-17 16:11:31,006 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h_save
+2021-05-17 16:11:31,091 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h
+2021-05-17 16:11:31,107 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c_save
+2021-05-17 16:11:31,245 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c
+2021-05-17 16:11:32,108 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 110mS.
+2021-05-17 16:11:32,108 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-17 16:11:32,739 [INFO] ConfigFileManager:1242 - The Die is : DIE410
+2021-05-17 16:11:32,752 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-05-17 16:11:32,792 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-05-17 16:11:32,822 [INFO] ApiDbMcu:458 - Load IP Config File for USB_DEVICE
+2021-05-17 16:11:35,081 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2973mS.
+2021-05-17 16:11:35,081 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:11:35,081 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:16:37,997 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 455621344 Bytes (847249408)
+2021-05-17 16:16:39,602 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 468114472 Bytes (847249408)
+2021-05-17 16:16:41,392 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 508499272 Bytes (847249408)
+2021-05-17 16:16:41,794 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-17 16:16:41,794 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8F1
+2021-05-17 16:16:41,794 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-17 16:16:41,794 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-17 16:16:41,794 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-17 16:16:41,794 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-05-17 16:16:41,809 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-05-17 16:16:41,809 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:16:41,809 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:16:42,110 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp_save
+2021-05-17 16:16:42,210 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp
+2021-05-17 16:16:42,241 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp_save
+2021-05-17 16:16:42,311 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp
+2021-05-17 16:16:42,326 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_Analogue is not available in your config.xml file
+2021-05-17 16:16:42,326 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_DigitalFolter is not available in your config.xml file
+2021-05-17 16:16:42,444 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:16:42,460 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:16:42,476 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c_save
+2021-05-17 16:16:42,627 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c
+2021-05-17 16:16:42,627 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h_save
+2021-05-17 16:16:42,743 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h
+2021-05-17 16:16:42,758 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c_save
+2021-05-17 16:16:42,881 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c
+2021-05-17 16:16:42,881 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp_save
+2021-05-17 16:16:42,943 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp
+2021-05-17 16:16:42,959 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-05-17 16:16:43,049 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h
+2021-05-17 16:16:43,081 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-05-17 16:16:43,081 [WARN] CodeGenerator:3191 - IP not found : null
+2021-05-17 16:16:43,081 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h_save
+2021-05-17 16:16:43,159 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h
+2021-05-17 16:16:43,175 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c_save
+2021-05-17 16:16:43,313 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c
+2021-05-17 16:16:44,127 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 71mS.
+2021-05-17 16:16:44,127 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-17 16:16:44,715 [INFO] ConfigFileManager:1242 - The Die is : DIE410
+2021-05-17 16:16:46,737 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2610mS.
+2021-05-17 16:16:46,737 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:16:46,753 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:18:11,811 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 388226896 Bytes (865075200)
+2021-05-17 16:18:13,430 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 358084304 Bytes (865075200)
+2021-05-17 16:18:15,554 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 398978768 Bytes (865075200)
+2021-05-17 16:18:15,855 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-17 16:18:15,855 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8F1
+2021-05-17 16:18:15,855 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-17 16:18:15,855 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-17 16:18:15,855 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-17 16:18:15,855 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-05-17 16:18:15,855 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-05-17 16:18:15,855 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:18:15,855 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:18:16,187 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp_save
+2021-05-17 16:18:16,241 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp
+2021-05-17 16:18:16,256 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp_save
+2021-05-17 16:18:16,325 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp
+2021-05-17 16:18:16,341 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_Analogue is not available in your config.xml file
+2021-05-17 16:18:16,341 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_DigitalFolter is not available in your config.xml file
+2021-05-17 16:18:16,441 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:18:16,457 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:18:16,472 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c_save
+2021-05-17 16:18:16,557 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c
+2021-05-17 16:18:16,557 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h_save
+2021-05-17 16:18:16,626 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h
+2021-05-17 16:18:16,642 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c_save
+2021-05-17 16:18:16,805 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c
+2021-05-17 16:18:16,805 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp_save
+2021-05-17 16:18:16,920 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp
+2021-05-17 16:18:16,927 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-05-17 16:18:17,027 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h
+2021-05-17 16:18:17,058 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-05-17 16:18:17,058 [WARN] CodeGenerator:3191 - IP not found : null
+2021-05-17 16:18:17,058 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h_save
+2021-05-17 16:18:17,128 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h
+2021-05-17 16:18:17,143 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c_save
+2021-05-17 16:18:17,290 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c
+2021-05-17 16:18:18,112 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 69mS.
+2021-05-17 16:18:18,114 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-17 16:18:18,675 [INFO] ConfigFileManager:1242 - The Die is : DIE410
+2021-05-17 16:18:20,651 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2537mS.
+2021-05-17 16:18:20,651 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:18:20,651 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:22:06,192 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 566512112 Bytes (897581056)
+2021-05-17 16:22:09,612 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 618851408 Bytes (897581056)
+2021-05-17 16:22:11,788 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 410946416 Bytes (897581056)
+2021-05-17 16:22:12,136 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-17 16:22:12,136 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8F1
+2021-05-17 16:22:12,136 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-17 16:22:12,136 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-17 16:22:12,136 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-17 16:22:12,136 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-05-17 16:22:12,136 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-05-17 16:22:12,136 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:22:12,136 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:22:12,467 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp_save
+2021-05-17 16:22:12,583 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp
+2021-05-17 16:22:12,605 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp_save
+2021-05-17 16:22:12,683 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp
+2021-05-17 16:22:12,690 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_Analogue is not available in your config.xml file
+2021-05-17 16:22:12,690 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_DigitalFolter is not available in your config.xml file
+2021-05-17 16:22:12,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:22:12,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:22:12,837 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c_save
+2021-05-17 16:22:12,922 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c
+2021-05-17 16:22:12,937 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h_save
+2021-05-17 16:22:13,006 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h
+2021-05-17 16:22:13,022 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c_save
+2021-05-17 16:22:13,122 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c
+2021-05-17 16:22:13,138 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp_save
+2021-05-17 16:22:13,292 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp
+2021-05-17 16:22:13,307 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-05-17 16:22:13,408 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h
+2021-05-17 16:22:13,439 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-05-17 16:22:13,439 [WARN] CodeGenerator:3191 - IP not found : null
+2021-05-17 16:22:13,455 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h_save
+2021-05-17 16:22:13,524 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h
+2021-05-17 16:22:13,524 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c_save
+2021-05-17 16:22:13,655 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c
+2021-05-17 16:22:14,479 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 61mS.
+2021-05-17 16:22:14,489 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-17 16:22:15,035 [INFO] ConfigFileManager:1242 - The Die is : DIE410
+2021-05-17 16:22:17,033 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2544mS.
+2021-05-17 16:22:17,033 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:22:17,049 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:29:41,437 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:29:41,437 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:29:41,437 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:29:41,437 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,014 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,014 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,014 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,014 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,030 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,030 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,030 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,030 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,045 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,045 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,045 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:40,045 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,422 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,422 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,422 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,422 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,440 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,440 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,440 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,440 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,456 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,456 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,456 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:46,456 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:51,624 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 530521048 Bytes (907018240)
+2021-05-17 16:34:52,858 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 543562688 Bytes (907018240)
+2021-05-17 16:34:55,146 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 585505728 Bytes (907018240)
+2021-05-17 16:34:55,569 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-17 16:34:55,569 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8F1
+2021-05-17 16:34:55,569 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-17 16:34:55,569 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-17 16:34:55,569 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-17 16:34:55,569 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-05-17 16:34:55,569 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-05-17 16:34:55,569 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:55,569 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:34:55,890 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp_save
+2021-05-17 16:34:55,968 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp
+2021-05-17 16:34:55,990 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp_save
+2021-05-17 16:34:56,053 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp
+2021-05-17 16:34:56,068 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_Analogue is not available in your config.xml file
+2021-05-17 16:34:56,068 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_DigitalFolter is not available in your config.xml file
+2021-05-17 16:34:56,184 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:34:56,184 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:34:56,206 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c_save
+2021-05-17 16:34:56,291 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c
+2021-05-17 16:34:56,291 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h_save
+2021-05-17 16:34:56,354 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h
+2021-05-17 16:34:56,369 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c_save
+2021-05-17 16:34:56,523 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c
+2021-05-17 16:34:56,523 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp_save
+2021-05-17 16:34:56,623 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp
+2021-05-17 16:34:56,639 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-05-17 16:34:56,724 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h
+2021-05-17 16:34:56,755 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-05-17 16:34:56,755 [WARN] CodeGenerator:3191 - IP not found : null
+2021-05-17 16:34:56,771 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h_save
+2021-05-17 16:34:56,840 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h
+2021-05-17 16:34:56,855 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c_save
+2021-05-17 16:34:56,987 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c
+2021-05-17 16:34:57,806 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 85mS.
+2021-05-17 16:34:57,822 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-17 16:34:58,379 [INFO] ConfigFileManager:1242 - The Die is : DIE410
+2021-05-17 16:35:00,507 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2685mS.
+2021-05-17 16:35:00,507 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:35:00,507 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:44:00,233 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 572763136 Bytes (919601152)
+2021-05-17 16:44:01,622 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 585866704 Bytes (919601152)
+2021-05-17 16:44:03,454 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 404977184 Bytes (919601152)
+2021-05-17 16:44:03,892 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-17 16:44:03,892 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8F1
+2021-05-17 16:44:03,892 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-17 16:44:03,892 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-17 16:44:03,892 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-17 16:44:03,892 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-05-17 16:44:03,892 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.1.202103241236\\db\
+2021-05-17 16:44:03,907 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-05-17 16:44:03,907 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-05-17 16:44:04,237 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp_save
+2021-05-17 16:44:04,347 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\license.tmp
+2021-05-17 16:44:04,372 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp_save
+2021-05-17 16:44:04,450 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\gpio.tmp
+2021-05-17 16:44:04,457 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_Analogue is not available in your config.xml file
+2021-05-17 16:44:04,457 [ERROR] IPConfigManager:1461 - ERROR: the RefConfig I2C_DigitalFolter is not available in your config.xml file
+2021-05-17 16:44:04,588 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:44:04,588 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-17 16:44:04,604 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c_save
+2021-05-17 16:44:04,704 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_it.c
+2021-05-17 16:44:04,704 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h_save
+2021-05-17 16:44:04,773 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_it.h
+2021-05-17 16:44:04,789 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c_save
+2021-05-17 16:44:04,921 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\stm32f1xx_hal_msp.c
+2021-05-17 16:44:04,921 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp_save
+2021-05-17 16:44:05,032 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\MXTmpFiles\system.tmp
+2021-05-17 16:44:05,058 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-05-17 16:44:05,190 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\stm32f1xx_hal_conf.h
+2021-05-17 16:44:05,221 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-05-17 16:44:05,221 [WARN] CodeGenerator:3191 - IP not found : null
+2021-05-17 16:44:05,237 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h_save
+2021-05-17 16:44:05,306 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Inc\main.h
+2021-05-17 16:44:05,322 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c_save
+2021-05-17 16:44:05,472 [INFO] CodeEngine:247 - Generated code: C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\Core\Src\main.c
+2021-05-17 16:44:06,276 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 69mS.
+2021-05-17 16:44:06,276 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-17 16:44:06,888 [INFO] ConfigFileManager:1242 - The Die is : DIE410
+2021-05-17 16:44:08,997 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2721mS.
+2021-05-17 16:44:08,997 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 16:44:09,013 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-17 17:57:54,047 [INFO] Activator:170 - 
+
+
+2021-05-17 17:57:54,047 [INFO] Activator:171 - !SESSION log4j initialized

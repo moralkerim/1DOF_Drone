@@ -446,7 +446,9 @@ void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 
 		  Kalman_Filtresi();
 		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
-		  PWMYaz(1000, 2000);
+
+
+
 	}
 }
 

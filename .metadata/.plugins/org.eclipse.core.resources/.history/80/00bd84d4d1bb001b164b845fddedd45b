@@ -83,7 +83,6 @@ void MPU6050_Baslat(void);
 int16_t GyroOku (uint8_t addr);
 float GyroErr(uint8_t addr);
 void Kalman_Filtresi(void);
-void PWMYaz(uint16_t pwm1, uint16_t pwm2);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -129,7 +128,6 @@ int main(void)
   gyro_e_x = GyroErr(GYRO_X_ADDR);
   HAL_TIM_Base_Start_IT(&htim2);
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 
   /* USER CODE END 2 */
 
@@ -242,9 +240,9 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 32-1;
+  htim1.Init.Prescaler = 320-1;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 20000-1;
+  htim1.Init.Period = 2000-1;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -266,10 +264,6 @@ static void MX_TIM1_Init(void)
   sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
   sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
   if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
   {
     Error_Handler();
   }
@@ -422,11 +416,6 @@ void Kalman_Filtresi(void) {
 	S11_m = S11_p; S12_m = S12_p; S21_m = S21_p; S22_m = S22_p;
 }
 
-void PWMYaz(uint16_t pwm1, uint16_t pwm2) {
-	  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,pwm1);
-	  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,pwm2);
-}
-
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 
 	if(htim == &htim2) {
@@ -446,7 +435,9 @@ void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 
 		  Kalman_Filtresi();
 		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
-		  PWMYaz(1000, 2000);
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,5);
+
+
 	}
 }
 
