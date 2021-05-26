@@ -913,3 +913,409 @@ Finished building: IMU_Kalman_Filter.bin
  
 Finished building: IMU_Kalman_Filter.list
  
+16:56:36 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37900	    512	   2128	  40540	   9e5c	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:02:25 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:04:05 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:06:05 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37900	    512	   2128	  40540	   9e5c	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:20:33 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:22:14 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:27:11 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:28:01 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:28:29 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:29:18 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:29:48 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:30:20 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:30:47 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:32:20 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:33:15 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:34:05 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:35:34 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:37:09 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:38:06 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:39:10 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:40:23 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:42:32 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_Kalman_Filter.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Kerim\STM32CubeIDE\workspace_1.6.1\IMU_Kalman_Filter\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_Kalman_Filter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_Kalman_Filter.elf
+ 
+arm-none-eabi-objdump -h -S  IMU_Kalman_Filter.elf  > "IMU_Kalman_Filter.list"
+arm-none-eabi-objcopy  -O binary  IMU_Kalman_Filter.elf  "IMU_Kalman_Filter.bin"
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_Kalman_Filter.bin
+ 
+Finished building: IMU_Kalman_Filter.list
+ 
+17:44:23 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:45:45 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:47:33 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:49:13 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:50:37 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:52:36 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:55:08 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:55:26 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:57:07 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+17:59:54 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+18:02:22 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+18:05:09 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+18:06:22 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+18:07:19 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+18:08:31 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 
+18:08:46 **** Incremental Build of configuration Debug for project IMU_Kalman_Filter ****
+make -j8 all 
+arm-none-eabi-size   IMU_Kalman_Filter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    512	   2128	  40548	   9e64	IMU_Kalman_Filter.elf
+Finished building: default.size.stdout
+ 

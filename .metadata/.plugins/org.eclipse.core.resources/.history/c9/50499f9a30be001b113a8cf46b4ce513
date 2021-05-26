@@ -84,7 +84,7 @@ float e, e_eski; //PID hatalari
 
 const float st = 0.001;
 //PD Katsayilari
-float Kp = 5;
+float Kp = 4;
 float Kd =  2/st;
 int timer;
 uint16_t IC_val1, IC_val2, pwm_input;

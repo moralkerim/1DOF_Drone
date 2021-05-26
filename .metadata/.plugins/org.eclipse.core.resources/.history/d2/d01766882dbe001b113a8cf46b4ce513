@@ -77,15 +77,15 @@ float S11_m, S12_m, S21_m, S22_m;
 float S11_p, S12_p, S21_p, S22_p;
 float Kt11, Kt21;
 float sa = 0.001; float sb = 0.001;
-float Q = 1; //0.5 -- onceki deger.
+float Q = 0.5; //0.5 -- onceki deger.
 float e, e_eski; //PID hatalari
 
 
 
 const float st = 0.001;
 //PD Katsayilari
-float Kp = 5;
-float Kd =  2/st;
+float Kp = 4;
+float Kd =  1.2/st;
 int timer;
 uint16_t IC_val1, IC_val2, pwm_input;
 uint16_t pwm1, pwm2;
