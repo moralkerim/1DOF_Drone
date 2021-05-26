@@ -53,6 +53,9 @@
 
 #define I2C_READ 0x01
 
+#define PWM_UPPER 1800
+#define PWM_LOWER 1050
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -69,16 +72,25 @@ float gyroX, gyroY, gyroZ, gyro_e_x, gyroX_a,gyroX_a_x, accX, accY, accZ;
 float pitch_acc;
 float gyroa_x, gyroa_y, gyroa_z;
 float alpha, bias;
+float alpha_des;
 float S11_m, S12_m, S21_m, S22_m;
 float S11_p, S12_p, S21_p, S22_p;
 float Kt11, Kt21;
 float sa = 0.001; float sb = 0.001;
-float Q = 0.5;
+float Q = 0.5; //0.5 -- onceki deger.
+float e, e_eski; //PID hatalari
+
+
+
 const float st = 0.001;
+//PD Katsayilari
+float Kp = 4;
+float Kd =  1.2/st;
 int timer;
 uint16_t IC_val1, IC_val2, pwm_input;
-uint16_t pwm_val=1000;
-char buf[100];
+uint16_t pwm1, pwm2;
+uint16_t pwm_mid = 1200;
+char buf[32];
 
 /* USER CODE END PV */
 
@@ -96,6 +108,11 @@ int16_t GyroOku (uint8_t addr);
 float GyroErr(uint8_t addr);
 void Kalman_Filtresi(void);
 void PWMYaz(uint16_t pwm1, uint16_t pwm2);
+void PD(float alpha_des, float alpha);
+uint16_t Sat(uint16_t pwm);
+float pwm2ang(uint16_t pwm);
+void MotorBaslat(void);
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -152,6 +169,8 @@ int main(void)
   //PWM Input Capture Kanalları
   HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_2);
   HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_3);
+
+  MotorBaslat();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -159,9 +178,10 @@ int main(void)
   while (1)
   {
 
-	  sprintf(buf,"%.3f \n\r",alpha);
-	  HAL_UART_Transmit(&huart2, (uint8_t*)buf, strlen(buf), 1000);
-	  PWMYaz(1200, 1200);
+	 // sprintf(buf,"%.3f||%.3f \n\r",alpha,pitch_acc);
+	 // HAL_UART_Transmit(&huart2, (uint8_t*)buf, strlen(buf), 1000);
+	  PWMYaz(pwm1, pwm2);
+	  HAL_Delay(1);
 
     /* USER CODE END WHILE */
 
@@ -546,6 +566,49 @@ void PWMYaz(uint16_t pwm1, uint16_t pwm2) {
 	  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,pwm2);
 }
 
+void PD(float alpha_des, float alpha) {
+	float P, D, pd,de;
+	e_eski = e;
+	e = alpha_des - alpha;
+	de = e - e_eski;
+	P = Kp*e; D = Kd*de;
+	pd = P + D;
+	pwm1 = Sat((uint16_t)(pwm_mid + pd)+150);
+	pwm2 = Sat((uint16_t)(pwm_mid - pd));
+
+}
+
+uint16_t Sat(uint16_t pwm) {
+	uint16_t pwm_out;
+	if(pwm > PWM_UPPER) {
+		pwm_out = PWM_UPPER;
+	}
+
+	else if (pwm < PWM_LOWER) {
+		pwm_out = PWM_LOWER;
+	}
+
+	else {
+		pwm_out = pwm;
+	}
+
+	return pwm_out;
+}
+
+float pwm2ang(uint16_t pwm) {
+	int16_t in_min  = 1000;
+	int16_t in_max  = 2000;
+	int16_t out_min = -30;
+	int16_t out_max  = 30;
+
+	return (pwm - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+void MotorBaslat(void) {
+	PWMYaz(1000,1000);
+	HAL_Delay(1000);
+}
+
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 
 	if(htim == &htim2) {
@@ -564,6 +627,9 @@ void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 		  pitch_acc=asin(accY/acctop)*57.324;					//İvme ölçerden hesaplanan pitch açısı
 
 		  Kalman_Filtresi();
+		  alpha_des = pwm2ang(pwm_input);
+		 // alpha_des = 0;
+		  PD(alpha_des,alpha);
 		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
 
 	}
